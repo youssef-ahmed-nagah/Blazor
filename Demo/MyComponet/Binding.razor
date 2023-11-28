@@ -1,0 +1,27 @@
+﻿@page "/Bind"
+<h3>Binding</h3>
+
+@if (MyPerson != null)
+{
+    <h1>@MyPerson?.Name</h1>
+    <h1>@MyPerson.Salary</h1>
+    <h2>Edit Form</h2>
+    <label>NAme</label>
+    <input type="text" @bind="MyPerson.Name">
+    <label>Salary</label>
+    <input type="number" @bind="MyPerson.Salary">
+}
+else
+{
+    <div>Wait......</div>
+}
+<a href="/person">Person Bind</a>
+<a href="/myFirst">First</a>
+
+@code {
+    public Person MyPerson { get; set; }
+    public Binding()
+    {
+        MyPerson = new() { Id=1,Name="Asmaa",Salary=5000};
+    }
+}

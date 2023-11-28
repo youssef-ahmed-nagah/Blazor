@@ -1,0 +1,52 @@
+﻿@page "/Emp/Edit/{id:int}"
+
+@inject IServices<Employee> EmpService
+@inject IServices<Department> deptService
+@inject NavigationManager navManager
+
+<h3>EditEmployee</h3>
+<h1>@myEmployee</h1>
+<hr />
+@if (myEmployee != null)
+{
+    <EditForm Model="myEmployee" OnValidSubmit="Save" OnInvalidSubmit="NotSave">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <ValidationSummary></ValidationSummary>
+        <div>
+            <label>Name </label>
+            <InputText @bind-Value="myEmployee.Name"></InputText>
+            <ValidationMessage For="()=>myEmployee.Name"></ValidationMessage>
+        </div>
+        <div>
+            <label>Salary </label>
+            <InputNumber @bind-Value="myEmployee.Salary"></InputNumber>
+            <ValidationMessage For="()=>myEmployee.Salary"></ValidationMessage>
+
+        </div>
+        <div>
+            <label>Image </label>
+            <InputText @bind-Value="myEmployee.Image"></InputText>
+            <ValidationMessage For="()=>myEmployee.Image"></ValidationMessage>
+
+        </div>
+        <div>
+            <label>Department </label>
+            @*<InputNumber @bind-Value="myEmployee.Dept_Id"></InputNumber>*@
+            <InputSelect @bind-Value="myEmployee.Dept_Id">
+                @foreach (var item in Depts)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="()=>myEmployee.Dept_Id"></ValidationMessage>
+
+        </div>
+        <input type="submit" value="Edit" class="btn btn-success">
+    </EditForm>
+}
+else
+{
+    <h1>Try With differnt id </h1>
+}
+<a href="/Emp/DEtails/@id">DEtails</a>
+

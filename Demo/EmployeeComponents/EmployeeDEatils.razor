@@ -1,0 +1,35 @@
+﻿@page "/Employee/{id:int}"
+@inject EmployeeService empService
+<h3>EmployeeDEatils</h3>
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">@employee?.Name</h4>
+        <p class="card-text">@employee?.Salary</p>
+        <a href="/Employee/edit/@id" class="card-link">Edit</a>
+        <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public int id { get; set; }
+    public Employee employee { get; set; }
+    //[Inject]
+    //public EmployeeService EmpSer { get; set; } 
+    public EmployeeDEatils()
+    {
+        //employee = empService.getByID(id);
+
+    }
+    protected override void OnInitialized()
+    {
+        employee= empService.getByID(id);
+        Console.WriteLine($"id={id}");
+        base.OnInitialized();
+    }
+    //protected override void OnParametersSet()
+    //{
+    //    employee = empService.getByID(id);
+    //    Console.WriteLine("on parameter set");
+    //    base.OnParametersSet();
+    //}
+}

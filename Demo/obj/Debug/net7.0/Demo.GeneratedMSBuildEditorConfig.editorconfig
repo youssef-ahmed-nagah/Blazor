@@ -1,0 +1,115 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Demo
+build_property.RootNamespace = Demo
+build_property.ProjectDir = G:\_Noor_Freelancing\New folder\New folder\Demos\Demo\Demo\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\_Noor_Freelancing\New folder\New folder\Demos\Demo\Demo
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/EmployeeAPIComponents/EmpDetailsComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = RW1wbG95ZWVBUElDb21wb25lbnRzXEVtcERldGFpbHNDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/EmployeeAPIComponents/EmpEditHttpComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = RW1wbG95ZWVBUElDb21wb25lbnRzXEVtcEVkaXRIdHRwQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/EmployeeComponents/EditEmployee.razor]
+build_metadata.AdditionalFiles.TargetPath = RW1wbG95ZWVDb21wb25lbnRzXEVkaXRFbXBsb3llZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/EmployeeComponents/EmployeeDEatils.razor]
+build_metadata.AdditionalFiles.TargetPath = RW1wbG95ZWVDb21wb25lbnRzXEVtcGxveWVlREVhdGlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/MyComponet/Binding.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25ldFxCaW5kaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/MyComponet/First.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25ldFxGaXJzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/MyComponet/PersonBind.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25ldFxQZXJzb25CaW5kLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/MyComponet/PersonDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = TXlDb21wb25ldFxQZXJzb25EZXRhaWxzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/PassData/Child1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFzc0RhdGFcQ2hpbGQxLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/PassData/Child2_1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFzc0RhdGFcQ2hpbGQyXzEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/PassData/Child2_2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFzc0RhdGFcQ2hpbGQyXzIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/PassData/Child3.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFzc0RhdGFcQ2hpbGQzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/PassData/Parent1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFzc0RhdGFcUGFyZW50MS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/PassData/Parent2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFzc0RhdGFcUGFyZW50Mi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/PassData/Parent3.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFzc0RhdGFcUGFyZW50My5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-5nfri4cfyt
+
+[G:/_Noor_Freelancing/New folder/New folder/Demos/Demo/Demo/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-bt1evhl7sg

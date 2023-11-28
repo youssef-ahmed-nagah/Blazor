@@ -1,0 +1,21 @@
+﻿<div style="border:9px solid blue;margin:10px">
+
+    <h3>Child3</h3>
+    <h2>@Msg</h2>
+    <input @bind="Msg" 
+           @bind:event="oninput"
+           @onchange="Notify"
+    type="text"/>
+    <input type="button" @onclick="Notify" />
+</div>
+
+@code {
+    public string Msg { get; set; }
+    [Parameter]
+    public EventCallback<string> MsgChangeEvent{ get; set; }
+    
+    public void Notify()
+    {
+        MsgChangeEvent.InvokeAsync(Msg);
+    }
+}

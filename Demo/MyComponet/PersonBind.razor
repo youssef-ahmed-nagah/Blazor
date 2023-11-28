@@ -1,0 +1,27 @@
+﻿@page "/Person"
+<h3>PersonBind</h3>
+<input type="button" @onclick="()=>{fun1(1);}" />
+
+<select @bind="PersonID"
+    @bind:event="oninput"
+    @onchange="GetData">
+
+    @foreach (var item in PersonList)
+    {
+        <option value="@item.Id">@item.Name</option>
+    }
+</select>
+<br/>
+<input @onclick="GetData" value="Show Peron Data" type="button" />
+<div class="card">
+  <div class="card-body">
+        <h4 class="card-title">@MyPerson?.Name</h4>
+    <p class="card-text">@MyPerson?.Salary</p>
+    <a href="/Bind" class="card-link">Bind</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<h1>@PersonID</h1>
+@code {
+    
+}

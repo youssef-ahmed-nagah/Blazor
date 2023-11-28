@@ -1,0 +1,17 @@
+﻿<div style="border:9px solid @Color;margin:10px">
+    <h3>Child1</h3>
+    <h2>@Message</h2>
+</div>
+@code {
+  
+    [Parameter] //Route ==>Parent
+    public string Message { get; set; } = "--HEllo---";
+    [Parameter] //Route ==>Parent
+    public string Color { get; set; } = "--HEllo---";
+    
+    protected override void OnInitialized()
+    {
+        //Message = "Hello FRom Child";
+        base.OnInitialized();
+    }
+}

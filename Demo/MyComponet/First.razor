@@ -1,0 +1,29 @@
+﻿@page "/myFirst"
+<PageTitle>First Page</PageTitle>
+<h3>First</h3>
+<input value="click"  @onclick="ShowMsg" type="button" />
+<!--One Way binding from c# display html-->
+<h1>One Way Binding</h1>
+<h2>@x</h2>
+<input type="text" value="@x" class="form-control"/>
+
+<!--Two Way Binding C# affect html & html effect C#  -->
+<h1>Two Way Binding</h1>
+<input @bind="x"  @bind:event="oninput" class="form-control" type="text"  />
+<input @bind-value="x" @bind-value:event="oninput" />
+
+
+@code {
+    //Propretye
+    public int x { get; set; }
+    //Constructor
+    public First()
+    {
+        x = 10;
+    }
+    public void ShowMsg()
+    {
+        x += 10;
+        Console.WriteLine($"Hello From C# x={x}");
+    }
+}

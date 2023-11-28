@@ -1,0 +1,43 @@
+﻿@page "/Person/DEtails/{id:int}"
+<h3>PersonDetails</h3>
+<div class="card">
+  <div class="card-body">
+        <h4 class="card-title">@MyPerson?.Name</h4>
+    <p class="card-text">@MyPerson?.Salary</p>
+    <a href="/Bind" class="card-link">Bind</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<h1>@id</h1>
+
+
+@code {
+    [Parameter]//get value fro route placeholder
+    public int id { get; set; }
+    public Person MyPerson { get; set; }
+    public List<Person> PersonList { get; set; }
+    public PersonDetails()
+    {
+        Console.WriteLine("Constructor "+id);
+        PersonList = new List<Person>();
+        PersonList.Add(new Person() { Id = 1, Name = "Abd Elrahman", Salary = 20000 });
+        PersonList.Add(new Person() { Id = 2, Name = "Omnia", Salary = 20000 });
+        PersonList.Add(new Person() { Id = 3, Name = "Tarek", Salary = 20000 });
+    }
+    public override Task SetParametersAsync(ParameterView parameters)
+    {
+        Console.WriteLine($"Set Paremt id ={id}");
+        return base.SetParametersAsync(parameters);
+    }
+    protected override void OnInitialized()
+    {
+        Console.WriteLine($"Inilaize id={id}");
+        MyPerson= PersonList.FirstOrDefault(p => p.Id == id);
+        base.OnInitialized();
+    }
+    protected override void OnParametersSet()
+    {
+        Console.WriteLine($"OnParametersSet id={id}");
+        base.OnParametersSet();
+    }
+}
